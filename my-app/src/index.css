@@ -12,24 +12,33 @@ body {
     content: "";
     display: table;
   }
-  
+
+  .title {
+    color: turquoise;
+    font-size: 40px;
+    font-family: "Century Gothic", Futura, sans-serif;
+  }
+
   .status {
     margin-bottom: 10px;
   }
   
+
   .square {
-    background: #fff;
+    background: red;
     border: 1px solid #999;
     float: left;
-    font-size: 24px;
+    font-size: 70px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 100px;
+    width:100px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    color:turquoise;
+  
   }
   
   .square:focus {
@@ -41,11 +50,13 @@ body {
   }
   
   .game {
+    margin-left:520px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
   
   .game-info {
-    margin-left: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
   }
   

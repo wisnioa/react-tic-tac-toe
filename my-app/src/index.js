@@ -12,11 +12,17 @@ function Square(props) {
     );
   }
 
+function Title(){
+    return (
+        <h3 className="title">Play Tic-Tac-Toe!</h3>
+    );
+}
   
   class Board extends React.Component {
 
     renderSquare(i) {
       return ( 
+      
       <Square 
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)} 
@@ -28,6 +34,7 @@ function Square(props) {
 
       return (
         <div>
+            <Title />
       
           <div className="board-row">
             {this.renderSquare(0)}
