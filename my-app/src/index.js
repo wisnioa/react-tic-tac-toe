@@ -25,14 +25,7 @@ function Square(props) {
   }
   
     render() {
-        const winner = calculateWinner(this.state.squares);
-        let status;
-        if (winner) {
-          status = 'Winner: ' + winner;
-        } else {
-          status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-        }
-  
+
       return (
         <div>
       
@@ -85,7 +78,8 @@ function Square(props) {
     }
 
     render() {
-       
+        const history = this.state.history;
+        const current = history[history.length - 1];
         const winner = calculateWinner(current.squares);
     
         let status;
